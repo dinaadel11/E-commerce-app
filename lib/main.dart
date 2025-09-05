@@ -1,9 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:newsapp/featuer/presention/views/login&signup_view/login.dart';
-import 'package:newsapp/featuer/presention/views/login&signup_view/register_view.dart';
-import 'package:newsapp/featuer/presention/views/splash/splash_view.dart';
+import 'package:newsapp/core/app_router.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -17,9 +15,9 @@ class E_Commerce_App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter().router,
       debugShowCheckedModeBanner: false,
-      home: LogInView(),
     );
   }
 }

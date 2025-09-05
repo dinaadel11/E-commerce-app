@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:newsapp/constan.dart';
 import 'package:newsapp/featuer/presention/views/widget/custom_button.dart';
 import 'package:newsapp/featuer/presention/views/widget/custom_text_field.dart';
@@ -48,19 +49,22 @@ class LogInView extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Dont have an account?',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                  'Create account',
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold),
+                InkWell(
+                  onTap: () => context.go('/RegisterView'),
+                  child: const Text(
+                    'Create account',
+                    style: TextStyle(
+                        color: kPrimaryColor,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             )

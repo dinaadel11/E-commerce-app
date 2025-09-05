@@ -1,6 +1,4 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:newsapp/constan.dart';
 
 class CustomTextField extends StatelessWidget {
   CustomTextField({
@@ -18,7 +16,7 @@ class CustomTextField extends StatelessWidget {
           contentPadding: EdgeInsets.all(12),
           prefixIcon: Icon(
             iconpref,
-            color: kPrimaryColor,
+            color: const Color.fromARGB(255, 164, 164, 165),
           ),
           label: Text('$label_Text'),
           border: OutlineInputBorder(
