@@ -30,7 +30,7 @@ class RegisterView extends StatelessWidget {
               height: 20,
             ),
             CustomTextField(
-              label_Text: 'Your Full Name',
+              label_Text: 'Full Name',
               iconpref: Icons.person,
             ),
             const SizedBox(
@@ -67,7 +67,7 @@ class RegisterView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'iam have an account?',
+                  'already have an account?',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 InkWell(
