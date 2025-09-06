@@ -12,6 +12,11 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (value) {
+        if (value!.isEmpty) {
+          return 'this Field is required';
+        }
+      },
       decoration: InputDecoration(
           contentPadding: EdgeInsets.all(12),
           prefixIcon: Icon(
@@ -21,13 +26,13 @@ class CustomTextField extends StatelessWidget {
           label: Text('$label_Text'),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(32),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Color(0xff6E6E6E),
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(32),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Color(0xff6E6E6E),
             ),
           )),
