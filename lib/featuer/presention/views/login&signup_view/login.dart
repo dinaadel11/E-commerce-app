@@ -49,7 +49,7 @@ class LogInView extends StatelessWidget {
                 titelButton: 'Login',
                 ontap: () {
                   if (formkey.currentState!.validate()) {
-                    context.go('/RegisterView');
+                    context.go('/HomeView');
                   }
                 },
               ),

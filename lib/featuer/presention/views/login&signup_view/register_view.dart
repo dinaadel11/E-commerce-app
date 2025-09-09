@@ -70,7 +70,7 @@ class RegisterView extends StatelessWidget {
                 titelButton: 'Register',
                 ontap: () {
                   if (formkey.currentState!.validate()) {
-                    context.go('/LogInView');
+                    context.go('/HomeView');
                   }
                 },
               ),
