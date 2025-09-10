@@ -22,7 +22,7 @@ class CustomCard extends StatelessWidget {
                   top: 8,
                   right: 8,
                   child: Icon(
-                    Icons.favorite,
+                    Icons.favorite_outline,
                     color: kPrimaryColor,
                   ))
             ],

@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:newsapp/featuer/presention/views/favorit/favoirt_view.dart';
 import 'package:newsapp/featuer/presention/views/home/home_view.dart';
 import 'package:newsapp/featuer/presention/views/login&signup_view/login.dart';
 import 'package:newsapp/featuer/presention/views/login&signup_view/register_view.dart';
@@ -21,6 +22,10 @@ class AppRouter {
     GoRoute(
       path: '/HomeView',
       builder: (context, state) => HomeView(),
+    ),
+    GoRoute(
+      path: '/FavoirtView',
+      builder: (context, state) => FavoirtView(),
     ),
   ]);
 }

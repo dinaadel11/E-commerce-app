@@ -30,7 +30,8 @@ class CustomAppBar extends StatelessWidget {
           ),
           Spacer(),
           Icon(
-            Icons.notifications,
+            Icons.notifications_none_outlined,
+            size: 26,
           )
         ],
       ),
