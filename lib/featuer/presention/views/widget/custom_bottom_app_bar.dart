@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:newsapp/constan.dart';
-import 'package:newsapp/core/app_router.dart';
 
 class CustomBottomAppBar extends StatefulWidget {
   const CustomBottomAppBar({super.key});
@@ -55,7 +54,11 @@ class _CustomBottomAppBarState extends State<CustomBottomAppBar> {
                   Icons.favorite,
                   color: selectedIndex == 1 ? kPrimaryColor : Colors.grey,
                 )),
-            IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+            IconButton(
+                onPressed: () {
+                  onTaped(2, '/CartView');
+                },
+                icon: Icon(Icons.shopping_cart)),
             IconButton(onPressed: () {}, icon: Icon(Icons.person)),
           ],
         ),

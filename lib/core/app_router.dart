@@ -1,4 +1,6 @@
 import 'package:go_router/go_router.dart';
+import 'package:newsapp/featuer/presention/views/cart/cart_view.dart';
+import 'package:newsapp/featuer/presention/views/cart/payment_view.dart';
 import 'package:newsapp/featuer/presention/views/favorit/favoirt_view.dart';
 import 'package:newsapp/featuer/presention/views/home/home_view.dart';
 import 'package:newsapp/featuer/presention/views/login&signup_view/login.dart';
@@ -26,6 +28,14 @@ class AppRouter {
     GoRoute(
       path: '/FavoirtView',
       builder: (context, state) => FavoirtView(),
+    ),
+    GoRoute(
+      path: '/CartView',
+      builder: (context, state) => CartView(),
+    ),
+    GoRoute(
+      path: '/PaymentView',
+      builder: (context, state) => PaymentView(),
     ),
   ]);
 }
